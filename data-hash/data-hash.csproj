@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C0446F8B-07A3-4E7F-97A7-82B7FF3C1767}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>data-hash</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <newfilesearch>OnLoadAutoInsert</newfilesearch>
+    <RootNamespace>datahash</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Policies>
+          <ChangeLogPolicy UpdateMode="ProjectRoot" inheritsSet="Mono">
+            <MessageStyle LineAlign="0" />
+          </ChangeLogPolicy>
+          <DotNetNamingPolicy DirectoryNamespaceAssociation="None" ResourceNamePolicy="MSBuild" />
+        </Policies>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <ItemGroup>
+    <Compile Include="MainForm.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="InputControls\InputTabControl.cs" />
+    <Compile Include="InputControls\TextTabPage.cs" />
+    <Compile Include="InputControls\HexTabPage.cs" />
+    <Compile Include="InputControls\FileTabPage.cs" />
+    <Compile Include="OutputControls\OutputTabControl.cs" />
+    <Compile Include="OutputControls\HashTabPage.cs" />
+    <Compile Include="OutputControls\EncodeTabPage.cs" />
+    <Compile Include="OutputControls\DecodeTabPage.cs" />
+    <Compile Include="CustomControl\HexTextBox.cs" />
+    <Compile Include="Algorithm\CRC32.cs" />
+    <Compile Include="InputControls\WebTabPage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms">
+    </Reference>
+    <Reference Include="System">
+    </Reference>
+    <Reference Include="System.Drawing">
+    </Reference>
+    <Reference Include="System.Data">
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CustomControl\" />
+    <Folder Include="InputControls\" />
+    <Folder Include="OutputControls\" />
+    <Folder Include="Algorithm\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Algorithm\pgp.urls" />
+  </ItemGroup>
+</Project>

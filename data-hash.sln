@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "data-hash", "data-hash\data-hash.csproj", "{C0446F8B-07A3-4E7F-97A7-82B7FF3C1767}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{028FCF8D-6645-4BBA-A931-C61712DA242D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0446F8B-07A3-4E7F-97A7-82B7FF3C1767}.Debug|x86.ActiveCfg = Debug|x86
+		{C0446F8B-07A3-4E7F-97A7-82B7FF3C1767}.Debug|x86.Build.0 = Debug|x86
+		{C0446F8B-07A3-4E7F-97A7-82B7FF3C1767}.Release|x86.ActiveCfg = Release|x86
+		{C0446F8B-07A3-4E7F-97A7-82B7FF3C1767}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+EndGlobal
