@@ -1,3 +1,5 @@
 *.userprefs
 bin/
 obj/
+*.iml
+.idea/
